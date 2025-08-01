@@ -5,15 +5,7 @@ import { toast } from 'react-toastify';
 import  './ProductCard.css';
 
 export default function ProductCard({ product }) {
-//   const dispatch = useDispatch();
-
-//   const handleAdd = () => {
-//     dispatch(addToCart(product));
-//     toast.success(`${product.name} added to cart!`);
-//   };
-
 const dispatch = useDispatch();
-
 const handleAdd = () => {
   dispatch({
     type: 'cart/addToCart',
